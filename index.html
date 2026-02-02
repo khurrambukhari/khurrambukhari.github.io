@@ -3,49 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Business Billing Invoice Maker app helps small businesses, shopkeepers, and freelancers create invoices, receipts, manage customers, payments, and reports easily.">
-    <meta name="keywords" content="Business Billing, Invoice Maker, Receipt Maker, Billing App, Small Business App, GST Invoice, Payment Management">
-    <meta name="author" content="Khurram Bukhari">
 
     <title>Business Billing – Invoice Maker App</title>
+
+    <meta name="description" content="Business Billing Invoice Maker is a free billing app for shopkeepers, freelancers, and small businesses. Create invoices, manage customers, track payments, and download reports easily.">
+    <meta name="keywords" content="Business Billing, Invoice Maker App, Receipt Maker, Billing App, Small Business Management">
+    <meta name="author" content="Khurram Bukhari">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f3f6f9;
             color: #333;
         }
+
         header {
-            background-color: #0f9d58;
-            color: #fff;
-            padding: 20px;
+            background: linear-gradient(135deg, #0f9d58, #1dbf73);
+            color: white;
+            padding: 50px 20px;
             text-align: center;
         }
-        section {
-            max-width: 900px;
-            margin: 20px auto;
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
             padding: 20px;
+        }
+
+        .card {
             background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
-        h1, h2 {
+
+        h2 {
             color: #0f9d58;
+            margin-top: 0;
         }
+
         ul {
-            line-height: 1.8;
+            line-height: 1.9;
+            padding-left: 20px;
         }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .play-btn {
+            display: inline-block;
+            background-color: #0f9d58;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 6px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .play-btn:hover {
+            background-color: #0c7c46;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #0f9d58;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             font-size: 14px;
             color: #666;
         }
-        a {
-            color: #0f9d58;
-            text-decoration: none;
-            font-weight: bold;
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
@@ -54,50 +109,62 @@
 
 <header>
     <h1>Business Billing – Invoice Maker</h1>
-    <p>Simple • Fast • Free Billing Solution for Small Businesses</p>
+    <p>Smart Billing & Business Management App for Small Businesses</p>
 </header>
 
-<section>
-    <h2>About the App</h2>
-    <p>
-        <strong>Business Billing – Invoice Maker</strong> is a complete business management
-        solution designed for shopkeepers, freelancers, and small businesses.
-        Create invoices and receipts in seconds, manage customers, track payments,
-        and view business reports easily.
-    </p>
-</section>
+<div class="container">
 
-<section>
-    <h2>Key Features</h2>
-    <ul>
-        <li>Create professional invoices & receipts quickly</li>
-        <li>Customer & payment management</li>
-        <li>Track pending and received payments</li>
-        <li>Product & stock management</li>
-        <li>Download reports in Excel</li>
-        <li>Simple, fast, and user-friendly design</li>
-        <li>Works offline</li>
-    </ul>
-</section>
+    <div class="card">
+        <h2>About the App</h2>
+        <p>
+            <strong>Business Billing – Invoice Maker</strong> is a powerful yet simple
+            billing solution designed for shopkeepers, freelancers, and small business owners.
+            Create professional invoices and receipts in seconds, manage customers,
+            track payments, and analyze your business with ease.
+        </p>
+    </div>
 
-<section>
-    <h2>Google AdMob</h2>
-    <p>
-        This website is used to host the <strong>app-ads.txt</strong> file required by
-        Google AdMob for ad authorization and transparency.
-    </p>
-    <p>
-        <a href="app-ads.txt">View app-ads.txt</a>
-    </p>
-</section>
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Quick invoice & receipt generation</li>
+            <li>Customer & payment management</li>
+            <li>Track pending and received payments</li>
+            <li>Product and stock management</li>
+            <li>Export reports in Excel format</li>
+            <li>Offline support</li>
+            <li>Clean, fast, and easy-to-use interface</li>
+        </ul>
+    </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>
-        For support or feedback, please contact us through the Google Play Store
-        listing of the app.
-    </p>
-</section>
+    <div class="card">
+        <h2>Download the App</h2>
+        <p>Create invoices and manage your business anywhere, anytime.</p>
+        <div class="buttons">
+            <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.bukhari.android_business_billing" target="_blank">
+                📲 Download on Google Play
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Google AdMob</h2>
+        <p>
+            This website hosts the <strong>app-ads.txt</strong> file required by Google AdMob
+            for advertising transparency and authorization.
+        </p>
+        <p>
+            <a href="app-ads.txt">View app-ads.txt</a>
+        </p>
+    </div>
+
+    <div class="card contact">
+        <h2>Contact & Support</h2>
+        <p>Email: <a href="mailto:khurrambukhari451@gmail.com">khurrambukhari451@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/923355398209" target="_blank">+92 335 5398209</a></p>
+    </div>
+
+</div>
 
 <footer>
     © 2026 Business Billing – Invoice Maker. All rights reserved.
